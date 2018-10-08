@@ -1,0 +1,125 @@
+{
+  "2078": {
+    "id": "knb-lter-pal",
+    "title": "Palmer Station Antarctica LTER Site",
+    "query": "id:*metadata/eml/knb-lter-pal*",
+    "prov": {
+      "id": "knb-lter-pal-2078",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-pal\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "2086": {
+    "id": "knb-lter-cce",
+    "title": "California Current Ecosystem",
+    "query": "id:*metadata/eml/knb-lter-cce*",
+    "prov": {
+      "id": "knb-lter-cce-2086",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-cce\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "2222": {
+    "id": "knb-lter-mcr",
+    "title": "MOOREA",
+    "query": "id:*metadata/eml/knb-lter-mcr*",
+    "prov": {
+      "id": "knb-lter-mcr-2222",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-mcr\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "2227": {
+    "id": "knb-lter-sbc",
+    "title": "Santa Barbara Coastal",
+    "query": "id:*metadata/eml/knb-lter-sbc*",
+    "prov": {
+      "id": "knb-lter-sbc-2227",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-sbc\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "520629": {
+    "id": "knb-lter-fce",
+    "title": "Florida Coastal Everglades",
+    "query": "id:*metadata/eml/knb-lter-fce*",
+    "prov": {
+      "id": "knb-lter-fce-520629",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-fce\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "549129": {
+    "id": "knb-lter-pie",
+    "title": "Plum Island Ecosystems",
+    "query": "id:*metadata/eml/knb-lter-pie*",
+    "prov": {
+      "id": "knb-lter-pie-549129",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-pie\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "550511": {
+    "id": "knb-lter-gce",
+    "title": "Georgia Coastal Everglades",
+    "query": "id:*metadata/eml/knb-lter-gce*",
+    "prov": {
+      "id": "knb-lter-gce-550511",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-gce\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "556027": {
+    "id": "knb-lter-sbc",
+    "title": "Santa Barbara Coastal",
+    "query": "projectText:Sources%20of%20Particulate%20Organic%20Matter%20and%20their%20use%20by%20Benthic%20Suspension-feeders%20in%20the%20Coastal%20California%20Ecosystem",
+    "prov": {
+      "id": "knb-lter-sbc-556027",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the projectText field equals \"Sources%20of%20Particulate%20Organic%20Matter%20and%20their%20use%20by%20Benthic%20Suspension-feeders%20in%20the%20Coastal%20California%20Ecosystem\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "563139": {
+    "id": "knb-lter-sbc",
+    "title": "Santa Barbara Coastal",
+    "query": "projectText:The%20effect%20of%20inbreeding%20on%20metapopulation%20dynamics%20of%20the%20giant%20kelp,%20Macrocystis%20pyrifera",
+    "prov": {
+      "id": "knb-lter-sbc-563139",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the projectText field equals \"The%20effect%20of%20inbreeding%20on%20metapopulation%20dynamics%20of%20the%20giant%20kelp,%20Macrocystis%20pyrifera\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "638543": {
+    "id": "knb-lter-vcr",
+    "title": "Virginia Coast Reserve",
+    "query": "id:*metadata/eml/knb-lter-vcr*%20AND%20projectText%3A\"Coastal%20SEES%20Collaborative%20Research%5C%3A%20A%20cross%5C-site%20comparison%20of%20salt%20marsh%20persistence%20in%20response%20to%20sea%5C-level%20rise%20and%20feedbacks%20from%20social%20adaptations\"",
+    "prov": {
+      "id": "knb-lter-vcr-638543",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-vcr\" AND the projectText \"Coastal SEES Collaborative Research: A cross-site comparison of salt marsh persistence in response to sea-level rise and feedbacks from social adaptations\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last. Requested by John Porter (jhp7e@virginia.edu) on 1/3/2018"
+    }
+  },
+  "675134": {
+    "id": "knb-lter-mcr",
+    "title": "MOOREA",
+    "awards": {
+      "675165": []
+    },
+    "query": "id:*metadata/eml/knb-lter-mcr*%20AND%20projectText:%22RAPID:%20How%20does%20nutrient%20availability%20alter%20coral%20bleaching,%20mortality,%20and%20recovery%20on%20Moorea%20coral%20reefs?%22",
+    "prov": {
+      "id": "knb-lter-mcr-675134",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-mcr\" AND the projectText \"RAPID: How does nutrient availability alter coral bleaching, mortality, and recovery on Moorea coral reefs?\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "675166": {
+    "id": "knb-lter-sbc",
+    "title": "Santa Barbara Coastal",
+    "awards": {
+      "675165": []
+    },
+    "query": "id:*metadata/eml/knb-lter-sbc*%20AND%20projectText%3A%22RAPID:%20Tracing%20the%20origin%20and%20fate%20of%20particulate%20organic%20matter%20in%20nearshore%20marine%20sediments%22",
+    "prov": {
+      "id": "knb-lter-sbc-675166",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-sbc\" AND the projectText \"RAPID: Tracing the origin and fate of particulate organic matter in nearshore marine sediments\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  },
+  "709891": {
+    "id": "knb-lter-cce",
+    "title": "California Current Ecosystem",
+    "query": "id:*metadata/eml/knb-lter-cce*%20AND%20keywords:RAPID*%20Responses%20of%20the%20California%20Current%20Ecosystem%20to%20El%20Nino2015-16",
+    "prov": {
+      "id": "knb-lter-cce-709891",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-cce\" AND the keyword \"RAPID: Responses of the California Current Ecosystem to El Nino 2015-16\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
+  }
+}
