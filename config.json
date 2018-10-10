@@ -124,7 +124,7 @@
   },
   "747769": {
     "id": "knb-lter-nes",
-    "title": "ES",
+    "title": "NES",
     "query": "id:*metadata/eml/knb-lter-nes*",
     "prov": {
       "id": "knb-lter-nes-747769",
