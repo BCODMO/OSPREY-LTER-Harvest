@@ -121,5 +121,14 @@
       "id": "knb-lter-cce-709891",
       "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-cce\" AND the keyword \"RAPID: Responses of the California Current Ecosystem to El Nino 2015-16\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
     }
+  },
+  "747769": {
+    "id": "knb-lter-nes",
+    "title": "ES",
+    "query": "id:*metadata/eml/knb-lter-nes*",
+    "prov": {
+      "id": "knb-lter-nes-747769",
+      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-nes\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+    }
   }
 }
