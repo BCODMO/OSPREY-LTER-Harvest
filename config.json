@@ -132,12 +132,13 @@
     }
   },
   "750929": {
+    "system": "PASTA",
     "id": "knb-lter-gce",
     "title": "Georgia Coastal Everglades",
-    "query": "id:*metadata/eml/knb-lter-gce*%20AND%20projectText:%222017%20Hurricane%20Irma%22",
+    "query": "fq=scope:knb-lter-gce&q=projectTitle:%222017%20Hurricane%20Irma%22%20OR%20relatedProjectTitle:%222017%20Hurricane%20Irma%22&defType=edismax",
     "prov": {
       "id": "knb-lter-gce-750929",
-      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-gce\" AND the projectText \"2017%20Hurricane%20Irma\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+      "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-gce\" and the projectTitle or relatedProjectTitle is \"2017%20Hurricane%20Irma\"."
     }
   }
 }
