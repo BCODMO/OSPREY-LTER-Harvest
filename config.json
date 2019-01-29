@@ -140,5 +140,15 @@
       "id": "knb-lter-gce-750929",
       "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-gce\" and the projectTitle or relatedProjectTitle is \"2017%20Hurricane%20Irma\"."
     }
+  },
+  "535322": {
+    "system": "PASTA",
+    "id": "knb-lter-mcr",
+    "title": "MOOREA",
+    "query": "fq=scope:knb-lter-mcr&q=projectTitle:"Collaborative%20Research:%20Ocean%20Acidification%20and%20Coral%20Reefs:%20Scale%20Dependence%20and%20Adaptive%20Capacity"&fl=doi,title&defType=edismax",
+    "prov": {
+      "id": "knb-lter-gce-535322",
+      "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-mcr\" and the projectTitle or relatedProjectTitle is \"Collaborative Research: Ocean Acidification and Coral Reefs: Scale Dependence and Adaptive Capacity\"."
+    }
   }
 }
