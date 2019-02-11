@@ -135,6 +135,10 @@
     "system": "PASTA",
     "id": "knb-lter-gce",
     "title": "Georgia Coastal Everglades",
+    "awards": {
+      "750928": [],
+      "750933": []
+    },
     "query": "fq=scope:knb-lter-gce&q=projectTitle:%222017%20Hurricane%20Irma%22%20OR%20relatedProjectTitle:%222017%20Hurricane%20Irma%22&defType=edismax",
     "prov": {
       "id": "knb-lter-gce-750929",
