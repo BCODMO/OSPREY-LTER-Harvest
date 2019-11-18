@@ -126,7 +126,7 @@
     "system": "PASTA",
     "id": "knb-lter-nes",
     "title": "NES",
-    "query": "fq=scope:knb-lter-nes&fl=doi,title&defType=edismax",
+    "query": "fq=scope:knb-lter-nes&q=site:nes&defType=edismax",
     "prov": {
       "id": "knb-lter-nes-747769",
       "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-nes\"."
