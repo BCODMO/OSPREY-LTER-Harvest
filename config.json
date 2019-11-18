@@ -123,12 +123,13 @@
     }
   },
   "747769": {
+    "system": "PASTA",
     "id": "knb-lter-nes",
     "title": "NES",
-    "query": "id:*metadata/eml/knb-lter-nes*",
+    "query": "fq=scope:knb-lter-nes&fl=doi,title&defType=edismax",
     "prov": {
       "id": "knb-lter-nes-747769",
-      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-nes\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+      "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-nes\"."
     }
   },
   "750929": {
