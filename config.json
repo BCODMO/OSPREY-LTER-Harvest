@@ -82,11 +82,12 @@
   },
   "638543": {
     "id": "knb-lter-vcr",
+    "system": "PASTA",
     "title": "Virginia Coast Reserve",
-    "query": "id:*metadata/eml/knb-lter-vcr*%20AND%20projectText%3A\"Coastal%20SEES%20Collaborative%20Research%5C%3A%20A%20cross%5C-site%20comparison%20of%20salt%20marsh%20persistence%20in%20response%20to%20sea%5C-level%20rise%20and%20feedbacks%20from%20social%20adaptations\"",
+    "query": "fq=scope:knb-lter-vcr&(projectTitle:%22Coastal%20SEES%20Collaborative%20Research%5C%3A%20*A%20cross%5C-site%20comparison%20of%20salt%20marsh%20persistence%20in%20response%20to%20sea%5C-level%20rise%20and%20feedbacks%20from%20social%20adaptations%22%20OR%20title:%22Coastal%20SEES%20Collaborative%20Research*%22)",
     "prov": {
       "id": "knb-lter-vcr-638543",
-      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-vcr\" AND the projectText \"Coastal SEES Collaborative Research: A cross-site comparison of salt marsh persistence in response to sea-level rise and feedbacks from social adaptations\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last. Requested by John Porter (jhp7e@virginia.edu) on 1/3/2018"
+      "description": "Query PASTA API dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-vcr\" AND either the projectTitle \"Coastal SEES Collaborative Research: * A cross-site comparison of salt marsh persistence in response to sea-level rise and feedbacks from social adaptations\" or the title \"Coastal SEES Collaborative Research: *\". Requested by John Porter (jhp7e@virginia.edu) on 1/3/2018, and updated on n2/23/2020"
     }
   },
   "675134": {
