@@ -9,7 +9,13 @@
       "datePublished": "2018-11-16",
       "publisher": {
         "@type": "Organization",
-        "name": "Dryad"
+        "name": "Dryad",
+        "url": "https://datadryad.org/"
+      },
+      "license": {
+        "@type": "CreativeWork",
+        "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
       },
       "identifier": {
         "@type": "PropertyValue",
