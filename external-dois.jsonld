@@ -6,8 +6,9 @@
       "@type": "Dataset",
       "identifier": {
         "@type": "PropertyValue",
+        "name": "doi:10.5061/dryad.31sm2",
         "propertyID": "https://registry.identifiers.org/registry/doi",
-        "value": "doi:10.5061/dryad.31sm2",
+        "value": "10.5061/dryad.31sm2",
         "url": "https://doi.org/10.5061/dryad.31sm2"
       }
     }
