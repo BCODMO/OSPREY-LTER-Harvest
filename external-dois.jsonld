@@ -7,6 +7,10 @@
       "name": "Data from: Host traits drive viral life histories across phytoplankton viruses",
       "description": "Viruses are integral to ecological and evolutionary processes, but we have a poor understanding of what drives variation in key traits across diverse viruses. For lytic viruses, burst size, latent period, and genome size are primary characteristics controlling host-virus dynamics. Here we synthesize data on these traits for 75 strains of phytoplankton viruses, which play an important role in global biogeochemistry. We find that primary traits of the host (genome size, growth rate) explain 40-50% of variation in burst size and latent period. Specifically, burst size and latent period both exhibit saturating relationships vs. the host:virus genome size ratio, with both traits increasing at low genome size ratios while showing no relationship at high size ratios. In addition, latent period declines as host growth rate increases. We analyze a model of latent period evolution to explore mechanisms that could cause these patterns. The model predicts that burst size may often be set by the host genomic resources available for viral construction, while latent period evolves to permit this maximal burst size, modulated by host metabolic rate. These results suggest that general mechanisms may underlie the evolution of diverse viruses. Future extensions of this work could help explain viral regulation of host populations, viral influence on community structure and diversity, and viral roles in biogeochemical cycles.",
       "datePublished": "2018-11-16",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dryad"
+      },
       "identifier": {
         "@type": "PropertyValue",
         "name": "doi:10.5061/dryad.31sm2",
