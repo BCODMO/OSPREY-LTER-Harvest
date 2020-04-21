@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org/",
+  "@graph:[
+    {
+      "@id": "http://lod.bco-dmo.org/id/dataset/809379",
+      "@type": "Dataset",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "value": "doi:10.5061/dryad.31sm2",
+        "url": "https://doi.org/10.5061/dryad.31sm2"
+      }
+    }
+  ]
+}
