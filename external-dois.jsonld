@@ -4,6 +4,7 @@
     {
       "@id": "http://lod.bco-dmo.org/id/dataset/809379",
       "@type": "Dataset",
+      "datePublished": "2018-11-16",
       "identifier": {
         "@type": "PropertyValue",
         "name": "doi:10.5061/dryad.31sm2",
