@@ -4,600 +4,610 @@
     "bcodmo": "http://lod.bco-dmo.org/id/",
     "schema": "http://schema.org/"
   },
-  "@set":[
-    {
-      "@id": "https://lternet.edu",
-      "@type": "ResearchProject",
-      "name": "Long Term Ecological Research Network",
-      "url": "https://lternet.edu"
-    },
-    {
-      "@id": "https://environmentaldatainitiative.org",
-      "@type": "Organization",
-      "name": "Environmental Data Initiative",
-      "url": "https://environmentaldatainitiative.org",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://environmentaldatainitiative.files.wordpress.com/2017/04/cropped-edi-logo-svg.png"
-      }
-    },
-    {
-      "@id": "https://dataone.org",
-      "@type": "Organization",
-      "name": "DataONE",
-      "url": "https://dataone.org",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://old.dataone.org/sites/all/images/DataONE_LOGO.jpg"
-      }
-    },
-    {
-      "@id": "dataone",
-      "@type": "SoftwareApplication",
-      "name": "DataONE SOLR Endpoint",
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@id": "dataone-solr-search-v1",
-        "@type": "SearchAction",
-        "target": {
-          "@id": "dataone-solr-search-v1-target",
-          "@type": "EntryPoint",
-          "contentType": "application/xml",
-          "urlTemplate": "https://cn.dataone.org/cn/v1/query/solr/?fl={fl}&q={q}&sort={sort}&rows={rows}&start={start}"
+  "@graph":[
+    { 
+      "@id": "https://lternet.edu#NamedIndividuals",
+      "@graph":[
+        {
+          "@id": "https://lternet.edu",
+          "@type": "ResearchProject",
+          "name": "Long Term Ecological Research Network",
+          "url": "https://lternet.edu"
         },
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "readonlyValue": true,
-            "valueName": "fl",
-            "defaultValue": "id,title,resourceMap"
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "readonlyValue": true,
-            "valueName": "sort",
-            "defaultValue": "id%20asc"
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q"
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "rows",
-            "defaultValue": 50
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "start",
-            "defaultValue": 0
+        {
+          "@id": "https://environmentaldatainitiative.org",
+          "@type": "Organization",
+          "name": "Environmental Data Initiative",
+          "url": "https://environmentaldatainitiative.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://environmentaldatainitiative.files.wordpress.com/2017/04/cropped-edi-logo-svg.png"
           }
-        ]
-      }
-    },
-    {
-      "@id": "pasta-eml",
-      "@type": "SoftwareApplication",
-      "name": "EDI PASTA EML Search API",
-      "provider": {
-        "@type": "Organization",
-        "name": "Environmental Data Initiative",
-        "url": "https://environmentaldatainitiative.org/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://environmentaldatainitiative.files.wordpress.com/2017/04/cropped-edi-logo-svg.png"
+        },
+        {
+          "@id": "https://dataone.org",
+          "@type": "Organization",
+          "name": "DataONE",
+          "url": "https://dataone.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://old.dataone.org/sites/all/images/DataONE_LOGO.jpg"
+          }
+        },
+        {
+          "@id": "dataone",
+          "@type": "SoftwareApplication",
+          "name": "DataONE SOLR Endpoint",
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@id": "dataone-solr-search-v1",
+            "@type": "SearchAction",
+            "target": {
+              "@id": "dataone-solr-search-v1-target",
+              "@type": "EntryPoint",
+              "contentType": "application/xml",
+              "urlTemplate": "https://cn.dataone.org/cn/v1/query/solr/?fl={fl}&q={q}&sort={sort}&rows={rows}&start={start}"
+            },
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "readonlyValue": true,
+                "valueName": "fl",
+                "defaultValue": "id,title,resourceMap"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "readonlyValue": true,
+                "valueName": "sort",
+                "defaultValue": "id%20asc"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "rows",
+                "defaultValue": 50
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "start",
+                "defaultValue": 0
+              }
+            ]
+          }
+        },
+        {
+          "@id": "pasta-eml",
+          "@type": "SoftwareApplication",
+          "name": "EDI PASTA EML Search API",
+          "provider": {
+            "@type": "Organization",
+            "name": "Environmental Data Initiative",
+            "url": "https://environmentaldatainitiative.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://environmentaldatainitiative.files.wordpress.com/2017/04/cropped-edi-logo-svg.png"
+            }
+          },
+          "potentialAction": {
+            "@id": "pasta-eml-search",
+            "@type": "SearchAction",
+            "target": {
+              "@id": "pasta-eml-search-target",
+              "@type": "EntryPoint",
+              "contentType": "application/xml",
+              "urlTemplate": "http://pasta.lternet.edu/package/search/eml?fl=doi,title&sort=score,desc&sort=packageid,asc&debug=false&' . $lter_site_info['query'] . '&rows=' . $count . '&start=' . $start;"
+            },
+            "result": {
+              "@type": "Dataset",
+              "name-output": { 
+                "@type": "PropertyValueSpecification", 
+                "valueRequired": true,
+                "valueName": "title" 
+              },
+              "url-output": { 
+                "@type": "PropertyValueSpecification", 
+                "valueRequired": true,
+                "valueName": "doi" 
+              }
+            },
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "readonlyValue": true,
+                "valueName": "fl",
+                "defaultValue": "doi,title"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "description": "sorted by the 'packageid' field ascending to ensure that the most recent dataset record is read last",
+                "valueRequired": true,
+                "readonlyValue": true,
+                "multipleValues": true,
+                "valueName": "sort",
+                "defaultValue": ["score,desc", "packageid,asc"]
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "readonlyValue": true,
+                "valueName": "debug",
+                "defaultValue": "false"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueName": "fq"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueName": "q"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueName": "defType"
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "rows",
+                "defaultValue": 50
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "start",
+                "defaultValue": 0
+              }
+            ]
+          }
         }
-      },
-      "potentialAction": {
-        "@id": "pasta-eml-search",
-        "@type": "SearchAction",
-        "target": {
-          "@id": "pasta-eml-search-target",
-          "@type": "EntryPoint",
-          "contentType": "application/xml",
-          "urlTemplate": "http://pasta.lternet.edu/package/search/eml?fl=doi,title&sort=score,desc&sort=packageid,asc&debug=false&' . $lter_site_info['query'] . '&rows=' . $count . '&start=' . $start;"
+      ]
+    },
+    {
+      "@id": "https://lternet.edu#DataCatalogs",
+      "@graph":[
+        {
+          "@type": "DataCatalog",
+          "name": "Palmer Station Antarctica LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 2078",
+          "identifier": "knb-lter-pal-2078",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'id' contains 'metadata/eml/knb-lter-pal' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-pal*%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/2078" }
+          }
         },
-        "result": {
-          "@type": "Dataset",
-          "name-output": { 
-            "@type": "PropertyValueSpecification", 
-            "valueRequired": true,
-            "valueName": "title" 
-          },
-          "url-output": { 
-            "@type": "PropertyValueSpecification", 
-            "valueRequired": true,
-            "valueName": "doi" 
+        {
+          "@type": "DataCatalog",
+          "name": "California Current Ecosystem LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 2086",
+          "identifier": "knb-lter-cce-2086",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'id' contains 'metadata/eml/knb-lter-cce' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-cce*%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/2086" }
           }
         },
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "readonlyValue": true,
-            "valueName": "fl",
-            "defaultValue": "doi,title"
+        {
+          "@type": "DataCatalog",
+          "name": "MOOREA LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 2222",
+          "identifier": "knb-lter-mcr-2222",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'id' contains 'metadata/eml/knb-lter-mcr' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-mcr*%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/2222" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Santa Barbara Coastal LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 2227",
+          "identifier": "knb-lter-sbc-2227",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'id' contains 'metadata/eml/knb-lter-sbc' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-sbc*%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/2227" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Florida Coastal Everglades LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 520629",
+          "identifier": "knb-lter-fce-520629",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'id' contains 'metadata/eml/knb-lter-fce' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-fce*%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/520629" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Plum Island Ecosystems LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 549129",
+          "identifier": "knb-lter-pie-549129",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'id' contains 'metadata/eml/knb-lter-pie' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-pie*%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/549129" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Georgia Coastal Everglades LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 550511",
+          "identifier": "knb-lter-gce-550511",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'id' contains 'metadata/eml/knb-lter-gce' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-gce*%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/550511" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Sources of Particulate Organic Matter and their use by Benthic Suspension-feeders in the Coastal California Ecosystem",
+          "description": "Datasets to include on BCO-DMO Project ID: 556027",
+          "identifier": "knb-lter-sbc-556027",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'projectText' is 'Sources of Particulate Organic Matter and their use by Benthic Suspension-feeders in the Coastal California Ecosystem' and is not obsoleted by a new record.",
+                "defaultValue": "projectText:Sources%20of%20Particulate%20Organic%20Matter%20and%20their%20use%20by%20Benthic%20Suspension-feeders%20in%20the%20Coastal%20California%20Ecosystem%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/556027" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "The effect of inbreeding on metapopulation dynamics of the giant kelp, Macrocystis pyrifera",
+          "description": "Datasets to include on BCO-DMO Project ID: 563139",
+          "identifier": "knb-lter-sbc-563139",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where the 'projectText' is 'The effect of inbreeding on metapopulation dynamics of the giant kelp, Macrocystis pyrifera' and is not obsoleted by a new record.",
+                "defaultValue": "projectText:The%20effect%20of%20inbreeding%20on%20metapopulation%20dynamics%20of%20the%20giant%20kelp,%20Macrocystis%20pyrifera%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/563139" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Coastal SEES Collaborative Research",
+          "description": "Datasets to include on BCO-DMO Project ID: 638543",
+          "identifier": "knb-lter-vcr-638543",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://environmentaldatainitiative.org"},
+          "accountablePerson": {
+            "@type": "Person",
+            "name": "John Porter",
+            "email": "jhp7e@virginia.edu"
           },
-          {
-            "@type": "PropertyValueSpecification",
-            "description": "sorted by the 'packageid' field ascending to ensure that the most recent dataset record is read last",
-            "valueRequired": true,
-            "readonlyValue": true,
-            "multipleValues": true,
-            "valueName": "sort",
-            "defaultValue": ["score,desc", "packageid,asc"]
+          "dateCreated": "2018-01-03",
+          "dateModified": "2020-02-23",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "pasta-eml-search" },
+            "target": { "@id": "pasta-eml-search-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where 'projectText' is like 'Coastal SEES Collaborative Research: *A cross-site comparison of salt marsh persistence in response to sea-level rise and feedbacks from social adaptations' OR 'title' is like 'Coastal SEES Collaborative Research*'",
+                "defaultValue": "(projectTitle:%22Coastal%20SEES%20Collaborative%20Research%5C%3A%20*A%20cross%5C-site%20comparison%20of%20salt%20marsh%20persistence%20in%20response%20to%20sea%5C-level%20rise%20and%20feedbacks%20from%20social%20adaptations%22%20OR%20title:%22Coastal%20SEES%20Collaborative%20Research*%22)" 
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "fq",
+                "description": "Scoped to 'knb-lter-vcr'",
+                "defaultValue": "scope:knb-lter-vcr" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/638543" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "\"RAPID: How does nutrient availability alter coral bleaching, mortality, and recovery on Moorea coral reefs?\" datasets from the MCR LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 675134 and Award ID: 675165",
+          "identifier": "knb-lter-mcr-675134",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where 'id' is like '*metadata/eml/knb-lter-mcr*' and 'projectText' is like '\"RAPID: How does nutrient availability alter coral bleaching, mortality, and recovery on Moorea coral reefs?\"' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-mcr*%20AND%20projectText:%22RAPID:%20How%20does%20nutrient%20availability%20alter%20coral%20bleaching,%20mortality,%20and%20recovery%20on%20Moorea%20coral%20reefs?%22%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": [
+              { "@id": "bcodmo:project/675134" },
+              { "@id": "bcodmo:award/675165" }
+            ]
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "\"RAPID: Tracing the origin and fate of particulate organic matter in nearshore marine sediments\" datasets from the SBC LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 675166 and Award ID: 675165",
+          "identifier": "knb-lter-sbc-675166",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where 'id' is like '*metadata/eml/knb-lter-sbc*' and 'projectText' is like '\"RAPID: How does nutrient availability alter coral bleaching, mortality, and recovery on Moorea coral reefs?\"' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-sbc*%20AND%20projectText%3A%22RAPID:%20Tracing%20the%20origin%20and%20fate%20of%20particulate%20organic%20matter%20in%20nearshore%20marine%20sediments%22%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": [
+              { "@id": "bcodmo:project/675166" },
+              { "@id": "bcodmo:award/675165" }
+            ]
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "RAPID: Tracing the origin and fate of particulate organic matter in nearshore marine sediments datasets from the CCE LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 709891",
+          "identifier": "knb-lter-cce-709891",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://dataone.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "dataone-solr-search-v1" },
+            "target": { "@id": "dataone-solr-search-v1-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where 'id' is like '*metadata/eml/knb-lter-cce*' and 'keywords' is like 'RAPID* Responses of the California Current Ecosystem to El Nino2015-16' and is not obsoleted by a new record.",
+                "defaultValue": "id:*metadata/eml/knb-lter-cce*%20AND%20keywords:RAPID*%20Responses%20of%20the%20California%20Current%20Ecosystem%20to%20El%20Nino2015-16%20AND%20-obsoletedBy" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/709891" }
+          }
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Northeast U.S. Shelf LTER Site",
+          "description": "Datasets to include on BCO-DMO Project ID: 747769",
+          "identifier": "knb-lter-nes-747769",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://environmentaldatainitiative.org"},
+          "accountablePerson": {
+            "@type": "Person",
+            "name": "Stace Beaulieu",
+            "email": "sbeaulieue@whoi.edu"
           },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "readonlyValue": true,
-            "valueName": "debug",
-            "defaultValue": "false"
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueName": "fq"
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueName": "q"
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueName": "defType"
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "rows",
-            "defaultValue": 50
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "start",
-            "defaultValue": 0
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "pasta-eml-search" },
+            "target": { "@id": "pasta-eml-search-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where 'site' is 'nes'",
+                "defaultValue": "site:nes" 
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "fq",
+                "description": "Scoped to 'knb-lter-nes'",
+                "defaultValue": "scope:knb-lter-nes" 
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueName": "defType",
+                "defaultValue": "edismax" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/747769" }
           }
-        ]
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Palmer Station Antarctica LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 2078",
-      "identifier": "knb-lter-pal-2078",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'id' contains 'metadata/eml/knb-lter-pal' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-pal*%20AND%20-obsoletedBy" 
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "2017 Hurricane Irma datasets from GCE",
+          "description": "Datasets to include on BCO-DMO Project ID: 750929, Award ID: 750928, and Award ID: 750933",
+          "identifier": "knb-lter-gce-750929",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://environmentaldatainitiative.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "pasta-eml-search" },
+            "target": { "@id": "pasta-eml-search-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where 'projectTitle' is \"2017 Hurricane Irma\" or '20relatedProjectTitle' is \"2017 Hurricane Irma\"",
+                "defaultValue": "projectTitle:%222017%20Hurricane%20Irma%22%20OR%20relatedProjectTitle:%222017%20Hurricane%20Irma%22" 
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "fq",
+                "description": "Scoped to 'knb-lter-gce'",
+                "defaultValue": "scope:knb-lter-gce" 
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueName": "defType",
+                "defaultValue": "edismax" 
+              }
+            ],
+            "object": [
+              { "@id": "bcodmo:project/750929" },
+              { "@id": "bcodmo:award/750928" },
+              { "@id": "bcodmo:award/750933" }
+            ]
           }
-        ],
-        "object": { "@id": "bcodmo:project/2078" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "California Current Ecosystem LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 2086",
-      "identifier": "knb-lter-cce-2086",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'id' contains 'metadata/eml/knb-lter-cce' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-cce*%20AND%20-obsoletedBy" 
+        },
+        {
+          "@type": "DataCatalog",
+          "name": "Collaborative Research: Ocean Acidification and Coral Reefs: Scale Dependence and Adaptive Capacity",
+          "description": "Datasets to include on BCO-DMO Project ID: 535322",
+          "identifier": "knb-lter-mcr-535322",
+          "publisher": { "@id": "https://lternet.edu"},
+          "provider": { "@id": "https://environmentaldatainitiative.org"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "sameAs": { "@id": "pasta-eml-search" },
+            "target": { "@id": "pasta-eml-search-target"},
+            "query-input": [
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "q",
+                "description": "Where 'projectTitle' is \"Collaborative Research: Ocean Acidification and Coral Reefs: Scale Dependence and Adaptive Capacity\"",
+                "defaultValue": "projectTitle:%22Collaborative%20Research:%20Ocean%20Acidification%20and%20Coral%20Reefs:%20Scale%20Dependence%20and%20Adaptive%20Capacity%22" 
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "fq",
+                "description": "Scoped to 'knb-lter-mcr'",
+                "defaultValue": "scope:knb-lter-mcr" 
+              },
+              {
+                "@type": "PropertyValueSpecification",
+                "valueName": "defType",
+                "defaultValue": "edismax" 
+              }
+            ],
+            "object": { "@id": "bcodmo:project/535322" }
           }
-        ],
-        "object": { "@id": "bcodmo:project/2086" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "MOOREA LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 2222",
-      "identifier": "knb-lter-mcr-2222",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'id' contains 'metadata/eml/knb-lter-mcr' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-mcr*%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/2222" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Santa Barbara Coastal LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 2227",
-      "identifier": "knb-lter-sbc-2227",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'id' contains 'metadata/eml/knb-lter-sbc' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-sbc*%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/2227" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Florida Coastal Everglades LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 520629",
-      "identifier": "knb-lter-fce-520629",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'id' contains 'metadata/eml/knb-lter-fce' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-fce*%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/520629" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Plum Island Ecosystems LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 549129",
-      "identifier": "knb-lter-pie-549129",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'id' contains 'metadata/eml/knb-lter-pie' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-pie*%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/549129" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Georgia Coastal Everglades LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 550511",
-      "identifier": "knb-lter-gce-550511",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'id' contains 'metadata/eml/knb-lter-gce' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-gce*%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/550511" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Sources of Particulate Organic Matter and their use by Benthic Suspension-feeders in the Coastal California Ecosystem",
-      "description": "Datasets to include on BCO-DMO Project ID: 556027",
-      "identifier": "knb-lter-sbc-556027",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'projectText' is 'Sources of Particulate Organic Matter and their use by Benthic Suspension-feeders in the Coastal California Ecosystem' and is not obsoleted by a new record.",
-            "defaultValue": "projectText:Sources%20of%20Particulate%20Organic%20Matter%20and%20their%20use%20by%20Benthic%20Suspension-feeders%20in%20the%20Coastal%20California%20Ecosystem%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/556027" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "The effect of inbreeding on metapopulation dynamics of the giant kelp, Macrocystis pyrifera",
-      "description": "Datasets to include on BCO-DMO Project ID: 563139",
-      "identifier": "knb-lter-sbc-563139",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where the 'projectText' is 'The effect of inbreeding on metapopulation dynamics of the giant kelp, Macrocystis pyrifera' and is not obsoleted by a new record.",
-            "defaultValue": "projectText:The%20effect%20of%20inbreeding%20on%20metapopulation%20dynamics%20of%20the%20giant%20kelp,%20Macrocystis%20pyrifera%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/563139" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Coastal SEES Collaborative Research",
-      "description": "Datasets to include on BCO-DMO Project ID: 638543",
-      "identifier": "knb-lter-vcr-638543",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://environmentaldatainitiative.org"},
-      "accountablePerson": {
-        "@type": "Person",
-        "name": "John Porter",
-        "email": "jhp7e@virginia.edu"
-      },
-      "dateCreated": "2018-01-03",
-      "dateModified": "2020-02-23",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "pasta-eml-search" },
-        "target": { "@id": "pasta-eml-search-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where 'projectText' is like 'Coastal SEES Collaborative Research: *A cross-site comparison of salt marsh persistence in response to sea-level rise and feedbacks from social adaptations' OR 'title' is like 'Coastal SEES Collaborative Research*'",
-            "defaultValue": "(projectTitle:%22Coastal%20SEES%20Collaborative%20Research%5C%3A%20*A%20cross%5C-site%20comparison%20of%20salt%20marsh%20persistence%20in%20response%20to%20sea%5C-level%20rise%20and%20feedbacks%20from%20social%20adaptations%22%20OR%20title:%22Coastal%20SEES%20Collaborative%20Research*%22)" 
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "fq",
-            "description": "Scoped to 'knb-lter-vcr'",
-            "defaultValue": "scope:knb-lter-vcr" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/638543" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "\"RAPID: How does nutrient availability alter coral bleaching, mortality, and recovery on Moorea coral reefs?\" datasets from the MCR LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 675134 and Award ID: 675165",
-      "identifier": "knb-lter-mcr-675134",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where 'id' is like '*metadata/eml/knb-lter-mcr*' and 'projectText' is like '\"RAPID: How does nutrient availability alter coral bleaching, mortality, and recovery on Moorea coral reefs?\"' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-mcr*%20AND%20projectText:%22RAPID:%20How%20does%20nutrient%20availability%20alter%20coral%20bleaching,%20mortality,%20and%20recovery%20on%20Moorea%20coral%20reefs?%22%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": [
-          { "@id": "bcodmo:project/675134" },
-          { "@id": "bcodmo:award/675165" }
-        ]
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "\"RAPID: Tracing the origin and fate of particulate organic matter in nearshore marine sediments\" datasets from the SBC LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 675166 and Award ID: 675165",
-      "identifier": "knb-lter-sbc-675166",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where 'id' is like '*metadata/eml/knb-lter-sbc*' and 'projectText' is like '\"RAPID: How does nutrient availability alter coral bleaching, mortality, and recovery on Moorea coral reefs?\"' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-sbc*%20AND%20projectText%3A%22RAPID:%20Tracing%20the%20origin%20and%20fate%20of%20particulate%20organic%20matter%20in%20nearshore%20marine%20sediments%22%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": [
-          { "@id": "bcodmo:project/675166" },
-          { "@id": "bcodmo:award/675165" }
-        ]
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "RAPID: Tracing the origin and fate of particulate organic matter in nearshore marine sediments datasets from the CCE LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 709891",
-      "identifier": "knb-lter-cce-709891",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://dataone.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "dataone-solr-search-v1" },
-        "target": { "@id": "dataone-solr-search-v1-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where 'id' is like '*metadata/eml/knb-lter-cce*' and 'keywords' is like 'RAPID* Responses of the California Current Ecosystem to El Nino2015-16' and is not obsoleted by a new record.",
-            "defaultValue": "id:*metadata/eml/knb-lter-cce*%20AND%20keywords:RAPID*%20Responses%20of%20the%20California%20Current%20Ecosystem%20to%20El%20Nino2015-16%20AND%20-obsoletedBy" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/709891" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Northeast U.S. Shelf LTER Site",
-      "description": "Datasets to include on BCO-DMO Project ID: 747769",
-      "identifier": "knb-lter-nes-747769",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://environmentaldatainitiative.org"},
-      "accountablePerson": {
-        "@type": "Person",
-        "name": "Stace Beaulieu",
-        "email": "sbeaulieue@whoi.edu"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "pasta-eml-search" },
-        "target": { "@id": "pasta-eml-search-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where 'site' is 'nes'",
-            "defaultValue": "site:nes" 
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "fq",
-            "description": "Scoped to 'knb-lter-nes'",
-            "defaultValue": "scope:knb-lter-nes" 
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueName": "defType",
-            "defaultValue": "edismax" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/747769" }
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "2017 Hurricane Irma datasets from GCE",
-      "description": "Datasets to include on BCO-DMO Project ID: 750929, Award ID: 750928, and Award ID: 750933",
-      "identifier": "knb-lter-gce-750929",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://environmentaldatainitiative.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "pasta-eml-search" },
-        "target": { "@id": "pasta-eml-search-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where 'projectTitle' is \"2017 Hurricane Irma\" or '20relatedProjectTitle' is \"2017 Hurricane Irma\"",
-            "defaultValue": "projectTitle:%222017%20Hurricane%20Irma%22%20OR%20relatedProjectTitle:%222017%20Hurricane%20Irma%22" 
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "fq",
-            "description": "Scoped to 'knb-lter-gce'",
-            "defaultValue": "scope:knb-lter-gce" 
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueName": "defType",
-            "defaultValue": "edismax" 
-          }
-        ],
-        "object": [
-          { "@id": "bcodmo:project/750929" },
-          { "@id": "bcodmo:award/750928" },
-          { "@id": "bcodmo:award/750933" }
-        ]
-      }
-    },
-    {
-      "@type": "DataCatalog",
-      "name": "Collaborative Research: Ocean Acidification and Coral Reefs: Scale Dependence and Adaptive Capacity",
-      "description": "Datasets to include on BCO-DMO Project ID: 535322",
-      "identifier": "knb-lter-mcr-535322",
-      "publisher": { "@id": "https://lternet.edu"},
-      "provider": { "@id": "https://environmentaldatainitiative.org"},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "sameAs": { "@id": "pasta-eml-search" },
-        "target": { "@id": "pasta-eml-search-target"},
-        "query-input": [
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "q",
-            "description": "Where 'projectTitle' is \"Collaborative Research: Ocean Acidification and Coral Reefs: Scale Dependence and Adaptive Capacity\"",
-            "defaultValue": "projectTitle:%22Collaborative%20Research:%20Ocean%20Acidification%20and%20Coral%20Reefs:%20Scale%20Dependence%20and%20Adaptive%20Capacity%22" 
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueRequired": true,
-            "valueName": "fq",
-            "description": "Scoped to 'knb-lter-mcr'",
-            "defaultValue": "scope:knb-lter-mcr" 
-          },
-          {
-            "@type": "PropertyValueSpecification",
-            "valueName": "defType",
-            "defaultValue": "edismax" 
-          }
-        ],
-        "object": { "@id": "bcodmo:project/535322" }
-      }
+        }
+      ]
     }
   ]
 }
