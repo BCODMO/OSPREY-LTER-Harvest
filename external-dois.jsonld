@@ -24,6 +24,30 @@
         "value": "10.5061/dryad.31sm2",
         "url": "http://doi.org/10.5061/dryad.31sm2"
       }
+    },
+    {
+      "@id": "http://lod.bco-dmo.org/id/dataset/806786",
+      "@type": "Dataset",
+      "name": "Coastal Habitat Restoration Survey",
+      "description": "Online expert elicitation survey of the membership of Coastal and Estuarine Research Federation (CERF) and International Coral Reef Society (ICRS). This dataset includes responses to a series of questions exploring scientist and practitioner experience restoring particular coastal habitats (coral reefs, oyster reefs, mangroves, salt marsh, and seagrasses), as well as perceptions of the purpose of restoration, site selection practices, the types of metrics used to evaluate restoration success, and the potential challenges to successful restoration.",
+      "datePublished": "2020-11-20",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dryad",
+        "url": "https://datadryad.org/"
+      },
+      "license": {
+        "@type": "CreativeWork",
+        "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "doi:10.5061/dryad.mpg4f4qxf2",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "value": "10.5061/dryad.mpg4f4qxf",
+        "url": "http://doi.org/10.5061/dryad.mpg4f4qxf"
+      }
     }
   ]
 }
