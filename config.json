@@ -160,7 +160,9 @@
   "752770": {
     "id": "rw-nga-lter",
     "title": "Northern Gulf of Alaska LTER Site",
-	  "query": "((text:(%22nga%20lter%22%20OR%20%22U.S.%20GLOBEC%20Northeast%20Pacific%20%5C(U.S.%20GLOBEC%5C-NEP%5C)%22%20OR%20%22Seward%20Line%22%20OR%20GAK%20OR%20%22Northern%20Gulf%20of%20Alaska%20Long%20Term%20Ecological%20Research%22)%20AND%20southBoundCoord:[48%20TO%20*]%20AND%20-text:%22National%20Center%20for%20Ecological%20Analysis%20and%20Synthesis%22%20AND%20*:*%20AND%20-contactOrganizationText:(%22U.S.%20Geological%20Survey%22%20OR%20%22USGS%20Information%20Services%22)%20AND%20*:*%20AND%20-title:%22Continuous%20Plankton%20Recorder%20and%20Temperature%20Data%22%20AND%20*:*))%20AND%20(-obsoletedBy:*%20AND%20*:*%20AND%20formatType:METADATA)",
+    "urlTemplate": "https://search.dataone.org/view/{id}",
+    "source": "https://search.dataone.org/portals/NGALTER",
+    "query": "((text:(%22nga%20lter%22%20OR%20%22U.S.%20GLOBEC%20Northeast%20Pacific%20%5C(U.S.%20GLOBEC%5C-NEP%5C)%22%20OR%20%22Seward%20Line%22%20OR%20GAK%20OR%20%22Northern%20Gulf%20of%20Alaska%20Long%20Term%20Ecological%20Research%22)%20AND%20southBoundCoord:[48%20TO%20*]%20AND%20-text:%22National%20Center%20for%20Ecological%20Analysis%20and%20Synthesis%22%20AND%20*:*%20AND%20-contactOrganizationText:(%22U.S.%20Geological%20Survey%22%20OR%20%22USGS%20Information%20Services%22)%20AND%20*:*%20AND%20-title:%22Continuous%20Plankton%20Recorder%20and%20Temperature%20Data%22%20AND%20*:*))%20AND%20(-obsoletedBy:*%20AND%20*:*%20AND%20formatType:METADATA)",
     "prov": {
       "id": "rw-nga-lter-752770",
       "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) for NGA LTER data, omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
