@@ -54,6 +54,17 @@
       "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-mcr\" and the projectTitle or relatedProjectTitle is \"Collaborative Research: Ocean Acidification and Coral Reefs: Scale Dependence and Adaptive Capacity\"."
     }
   },
+  ,
+  "542223": {
+    "id": "knb-lter-sbc_542223",
+    "title": "Linking nearshore kelp forest dynamics to sandy beach ecosystems",
+    "system": "PASTA",
+    "query": "fq=scope:knb-lter-sbc&defType=edismax&q=projectTitle:%22Linking%20nearshore%20kelp%20forest%20dynamics%20to%20sandy%20beach%20ecosystems%22",
+    "prov": {
+      "id": "knb-lter-sbc-542223",
+      "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-sbd\" and the Project Title is \"Linking nearshore kelp forest dynamics to sandy beach ecosystems\"."
+    }
+  },
   "549129": {
     "id": "knb-lter-pie",
     "title": "Plum Island Ecosystems",
