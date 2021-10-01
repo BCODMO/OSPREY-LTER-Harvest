@@ -54,7 +54,6 @@
       "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-mcr\" and the projectTitle or relatedProjectTitle is \"Collaborative Research: Ocean Acidification and Coral Reefs: Scale Dependence and Adaptive Capacity\"."
     }
   },
-  ,
   "542223": {
     "id": "knb-lter-sbc_542223",
     "title": "Linking nearshore kelp forest dynamics to sandy beach ecosystems",
