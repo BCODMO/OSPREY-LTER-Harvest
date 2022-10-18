@@ -178,5 +178,15 @@
       "id": "rw-nga-lter-752770",
       "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) for NGA LTER data, omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
     }
+  },
+  "876719": {
+    "system": "PASTA",
+    "id": "knb-lter-gce",
+    "title": "Project: 876719",
+    "query": "fq=scope:knb-lter-gce&q=doi:*6a1db75bfc051e704cf35497dd9551e7&defType=edismax",
+    "prov": {
+      "id": "knb-lter-gce-876719",
+      "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-gce\" and the doi ends with \"6a1db75bfc051e704cf35497dd9551e7\"."
+    }
   }
 }
