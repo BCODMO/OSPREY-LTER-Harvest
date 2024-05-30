@@ -22,7 +22,7 @@
         "name": "doi:10.5061/dryad.31sm2",
         "propertyID": "https://registry.identifiers.org/registry/doi",
         "value": "10.5061/dryad.31sm2",
-        "url": "http://doi.org/10.5061/dryad.31sm2"
+        "url": "https://doi.org/10.5061/dryad.31sm2"
       }
     },
     {
@@ -43,10 +43,34 @@
       },
       "identifier": {
         "@type": "PropertyValue",
-        "name": "doi:10.5061/dryad.mpg4f4qxf2",
+        "name": "doi:10.5061/dryad.mpg4f4qxf",
         "propertyID": "https://registry.identifiers.org/registry/doi",
         "value": "10.5061/dryad.mpg4f4qxf",
-        "url": "http://doi.org/10.5061/dryad.mpg4f4qxf"
+        "url": "https://doi.org/10.5061/dryad.mpg4f4qxf"
+      }
+    },
+    {
+      "@id": "http://lod.bco-dmo.org/id/dataset/928537",
+      "@type": "Dataset",
+      "name": "Virtual Lab Meeting Program (LaMP) survey",
+      "description": "Developing robust professional networks can help shape the trajectories of early career scientists. Yet, historical inequities in STEM fields makes access to these networks highly variable across academic programs, and senior academics often have little time for mentoring. Here, we illustrate the success of a Virtual Lab Meeting Program (LaMP). In this program, we matched students (“Mentees”) with a more experienced researcher (“Mentors”) from a research group. The Mentees then attended the Mentors’ lab meetings during the academic year with two lab meetings specifically dedicated to the Mentee’s professional development. Survey results indicate that Mentees expanded their knowledge of the hidden curriculum as well as their professional network, while only requiring a few extra hours of their Mentor’s time over eight months. In addition, host labs benefitted from Mentees sharing new perspectives and knowledge in lab meetings. Diversity of the Mentees was significantly higher than the Mentors, suggesting that the program increased participation of traditionally underrepresented groups. Finally, we found that providing a stipend was very important to many mentees. We conclude that Virtual Lab Meeting Programs can be an inclusive and cost-effective way to foster trainee development and increase diversity within STEM fields with little additional time commitment.",
+      "datePublished": "2024-04-09",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dryad",
+        "url": "https://datadryad.org/"
+      },
+      "license": {
+        "@type": "CreativeWork",
+        "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "doi:10.5061/dryad.p2ngf1vzp",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "value": "10.5061/dryad.p2ngf1vzp",
+        "url": "https://doi.org/10.5061/dryad.p2ngf1vzp"
       }
     }
   ]
