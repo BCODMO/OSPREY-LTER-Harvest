@@ -188,5 +188,15 @@
       "id": "knb-lter-gce-876719",
       "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-gce\" and the doi ends with \"6a1db75bfc051e704cf35497dd9551e7\"."
     }
+  },
+  "857301": {
+    "system": "PASTA",
+    "id": "knb-lter-sbc",
+    "title": "Project: 857301",
+    "query": "fq=scope:knb-lter-sbc&q=(doi:*27e795dee803493140d6a7cdc3d23379%20OR%20doi:*28a62732ad76625af1667c252187c8e3)&defType=edismax",
+    "prov": {
+      "id": "knb-lter-sbc-857301",
+      "description": "Query PASTA API for the dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-sbc\" and the doi ends with either \"27e795dee803493140d6a7cdc3d23379\" or \"28a62732ad76625af1667c252187c8e3\"."
+    }
   }
 }
