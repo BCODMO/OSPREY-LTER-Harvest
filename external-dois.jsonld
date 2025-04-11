@@ -2,6 +2,30 @@
   "@context": "https://schema.org/",
   "@graph":[
     {
+       "@id": "http://lod.bco-dmo.org/id/dataset/958552",
+       "@type": "Dataset",
+       "name": "MassIVE MSV000096410 - HOT335 15N2-tracking Metaproteomics",
+       "description": "Metaproteomics analyses of mixed-layer water from Hawaii Ocean Time-series Station ALOHA, incubated with 15N2 to track biosynthetic incorporation by diazotrophic microbes",
+       "datePublished": "2024",
+       "publisher": {
+         "@type": "Organization",
+         "name": "MassIVE",
+         "url": "https://massive.ucsd.edu/"
+       },
+       "license": {
+         "@type": "CreativeWork",
+         "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+         "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+       },
+       "identifier": {
+         "@type": "PropertyValue",
+         "name": "doi:10.25345/C5C24R05N",
+         "propertyID": "https://registry.identifiers.org/registry/doi",
+         "value": "10.25345/C5C24R05N",
+         "url": "https://doi.org/10.25345/C5C24R05N"
+       }
+     },
+    {
       "@id": "http://lod.bco-dmo.org/id/dataset/809379",
       "@type": "Dataset",
       "name": "Data from: Host traits drive viral life histories across phytoplankton viruses",
