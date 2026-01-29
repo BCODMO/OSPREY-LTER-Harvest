@@ -28,12 +28,13 @@
     }
   },
   "2227": {
+    "system": "PASTA",
     "id": "knb-lter-sbc",
     "title": "Santa Barbara Coastal",
-    "query": "id:*metadata/eml/knb-lter-sbc*",
+    "query": "&fl=id,doi,title&fq=scope:knb-lter-sbc&q=site:sbc&defType=edismax",
     "prov": {
       "id": "knb-lter-sbc-2227",
-      "description": "Query DataONE for the dataset ID (id field), dataset title (title field), and dataset DOI (resourceMap field) where the id LIKE \"metadata/eml/knb-lter-sbc\", omitting any result that has the \"obsoletedBy\" field defined, and sorted by the id field ascending to ensure that the most recent dataset record is read last"
+      "description": "Query PASTA API for dataset title (title field) and dataset DOI (doi field) where the scope is \"knb-lter-sbc\"."
     }
   },
   "520629": {
