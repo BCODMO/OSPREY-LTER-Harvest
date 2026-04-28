@@ -2,6 +2,30 @@
   "@context": "https://schema.org/",
   "@graph":[
     {
+       "@id": "http://lod.bco-dmo.org/id/dataset/997449",
+       "@type": "Dataset",
+       "name": "Conserved pathway for homarine catabolism in environmental bacteria",
+       "description": "Homarine (N-methylpicolinic acid) is a ubiquitous marine metabolite produced by phytoplankton and noted for its bioactivity in marine animals, yet its microbial degradation pathways are uncharacterized. Here, we identify a conserved operon (homABCDER) that mediates homarine catabolism in bacteria using comparative transcriptomics, mutagenesis, and targeted knockouts. Phylogenetic and genomic analyses show this operon distributed across abundant bacterial clades, including coastal copiotrophs (e.g., Rhodobacterales) and open-ocean oligotrophs (e.g., SAR11, SAR116). High-resolution mass spectrometry revealed N-methylglutamic acid and glutamic acid as key metabolic products of homarine in both model and natural systems, with N-methylglutamate dehydrogenase catalyzing their conversion. Metatranscriptomics showed responsive and in situ expression of hom genes aligned with homarine availability. These findings uncover the genetic and metabolic basis of homarine degradation, establish its ecological relevance, and highlight homarine as a versatile growth substrate that feeds into central metabolism via glutamic acid in diverse marine bacteria.",
+       "datePublished": "2025",
+       "publisher": {
+         "@type": "Organization",
+         "name": "Metabolomics Workbench",
+         "url": "https://www.metabolomicsworkbench.org/"
+       },
+       "license": {
+         "@type": "CreativeWork",
+         "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+         "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+       },
+       "identifier": {
+         "@type": "PropertyValue",
+         "name": "doi:10.21228/M8R54Z",
+         "propertyID": "https://registry.identifiers.org/registry/doi",
+         "value": "10.21228/M8R54Z",
+         "url": "https://doi.org/10.21228/M8R54Z"
+       }
+     },
+    {
        "@id": "http://lod.bco-dmo.org/id/dataset/958552",
        "@type": "Dataset",
        "name": "MassIVE MSV000096410 - HOT335 15N2-tracking Metaproteomics",
